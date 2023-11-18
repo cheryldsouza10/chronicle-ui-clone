@@ -1,0 +1,130 @@
+.container-wrap {
+    --size: 70vmin;
+    perspective: 70vmin;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-image: url("https://chroniclehq.com/images/bg-website-min.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+.container {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: relative;
+    color: white;
+    transform-style: preserve-3d;
+    animation: animate 1s linear;
+    animation-play-state: paused; 
+    animation-delay: calc(var(--scroll) * -0.5s);
+    display: flex;
+    cursor: none !important;
+    transform: translateZ(calc(var(--size) * -1));
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: rotateX(-90deg) rotateZ(0deg) rotateY(0deg);
+      }
+}
+
+.backScreen {
+    max-width: 50%;
+    height: 80%;
+    display: block;
+}
+
+.inside-content {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    width: 35%;
+}
+
+.in-circles {
+    position: fixed;
+    top: 2%;
+    left: 70%;
+}
+
+#seed-raised {
+    align-items: center;
+    width: max-content;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 25px;
+    height: 24px;
+    background-color: #7053ff;
+}
+
+.inner-comp {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 30%;
+}
+
+#impact {
+    margin: auto;
+    font-family:'Gill Sans';
+    font-weight: 500;
+    font-size: 5vw;
+    text-align: left;
+}
+
+#other-text {
+    font-family:'Gill Sans';
+    font-weight: 100;
+    font-size: 1.4vw;
+    color: grey;
+    text-align: left;
+}
+
+#jessica {
+    width: 70px;
+    height: 35px;
+    display: inline-block;
+}
+
+.circles-comp {
+    color: wheat;
+    margin: auto;
+}
+
+.circles {
+    color: #fff;
+}
+
+.wave {
+    font-size: 80px;
+    width: 80px;
+    height: auto;
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-delay: 0;
+    animation-duration: 1s;        /* Change to speed up or slow down */
+    animation-iteration-count: 1;  
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    animation-fill-mode: forwards;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    96% { opacity:0 }
+    100% {transform: rotate( 0.0deg); opacity:0}
+  }
+  
+ 

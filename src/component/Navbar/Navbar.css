@@ -1,0 +1,153 @@
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+
+#ThemeHeading{
+  font-weight:bolder;
+  font-size:40px;
+}
+
+#ThemeContent{
+  margin:0;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size:20px;
+  font-family:'Spectral SC', serif;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: black;
+  font-size: 50px;
+}
+
+
+li:hover{
+  opacity:0.5;
+}
+
+.NavContent{
+  padding:45px;
+  transition:1s;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: black;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars{
+  color:brown;
+}
+
+.navbar-toggler[aria-expanded="true"]{
+  background-color: none;
+}
+
+.navbar-toggler:focus{
+ outline: green;
+}
+
+.navbar.active .nav-link{
+  color: white;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: white;
+}
+
+.Padding5{
+  padding:35px;
+}
+
+.Margin5{
+  margin: 45px;
+}
+
+.Display4{
+  font-size: 64px;
+  color:black;
+}
+
+#ThemeSVG{
+  height: 100vh
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar{
+  	background-color:black;
+  }
+	
+  #ThemeHeading{
+    font-size:30px;
+  }
+
+
+  .navbar .navbar-brand, .navbar .nav-link {
+      color: #555;
+      font-size: 25px;
+  }
+  #ThemeSVG{
+    height:30vh;
+  }
+  
+}
+
+@keyframes fade{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1560px) {
+  
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1200px) {
+  #ThemeSVG{
+    height:50vh;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+
+
+  .Padding5,.Margin5{
+    padding:15px;
+    margin:15px
+  }
+  .Display4{
+    font-size: 32px;
+  }
+  .NavContent{
+    padding:0px;
+  }
+  .Theme{
+    background-color: white;
+  }
+}

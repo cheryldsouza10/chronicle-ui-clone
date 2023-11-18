@@ -1,0 +1,52 @@
+.gallery-container {
+    padding: 40px 5%;
+    position: relative;
+  }
+  
+  .heading-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family:'Gill Sans';
+    font-weight: 500;
+    font-size: 5vw;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .heading-text span {
+    font-weight: 100;
+  }
+  
+  /* Responsive image gallery rules begin*/
+  
+  .image-gallery {
+    /* Mobile first */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .image-gallery {
+      flex-direction: row;
+    }
+  }
+  
+  .image-item {
+    position: relative;
+    cursor: pointer;
+  }
+  

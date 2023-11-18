@@ -1,0 +1,49 @@
+.container-box {
+    width: 100%;
+    
+}
+
+.box {
+    padding-top: 20px;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    margin: 300px 300px;
+    /* position: absolute; */
+    display:block;
+    height: auto;
+    padding-bottom: 500px;
+    background-color: black;
+}
+
+.details {
+    font-family:'Gill Sans';
+    text-align: left;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.details-fixed {
+    font-family:'Gill Sans';
+    text-align: left;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.transparent {
+    opacity: 0.5;
+}
+
+@media (width > 1100) {
+    .box {
+        position: sticky;
+        top: 0.6em;
+    }
+}
