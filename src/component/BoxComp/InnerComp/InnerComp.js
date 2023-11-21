@@ -13,7 +13,7 @@ const InnerComp = () => {
         <div className="inner-container">
             <div className="main-images">
                 <div className="search-bar"><img src={SearchBar} alt="Search Bar" width={"100%"}/></div>
-                <div className="target-image"><img src={TargetImage} alt="Target" style={{width:"500px"}}/></div>
+                <div className="target-image"><img src={TargetImage} alt="Target" width={"100%"}/></div>
             </div>
 
             <div className="side-images">
